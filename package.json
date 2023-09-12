@@ -7,22 +7,29 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4",
-    "@sap/cds-hana": "^2"
+    "@sap/cds-hana": "^2",
+    "express": "^4"
   },
   "devDependencies": {
-    "@sap/cds-dk": "^7"
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.108.13"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-iteraction_items": "cds watch --open iteraction_items/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
-    "build": {"target": "."},
+    "build": {
+      "target": "."
+    },
     "hana": {
       "deploy-format": "hdbtable"
     },
     "requires": {
       "db": "hana"
     }
-  }
+  },
+  "sapux": [
+    "app/iteraction_items"
+  ]
 }
