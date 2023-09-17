@@ -8,6 +8,7 @@ modules:
     path: srv
     requires:
       - name: MyHANAApp-db
+      - name: uaa_MyHANAApp
     provides:
       - name: srv-api
         properties:
@@ -38,6 +39,7 @@ modules:
     parameters:
       disk-quota: 256M
       memory: 256M
+      keep-existing-routes: true
   - name: MyHANAApp_ui_deployer
     type: com.sap.application.content
     path: .
@@ -63,6 +65,9 @@ resources:
       service: xsuaa
       service-name: MyHANAApp-xsuaa-service
       service-plan: application
+      config:
+        xsappname: MyHANAApp-${org}-${space}
+        tenant-mode: dedicated
   - name: MyHANAApp_html_repo_host
     type: org.cloudfoundry.managed-service
     parameters:

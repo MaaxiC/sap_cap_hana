@@ -1,7 +1,7 @@
 {
   "_version": "1.49.0",
   "sap.app": {
-    "id": "iteractionitems",
+    "id": "interactionitems",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:worklist",
-      "version": "1.10.6",
-      "toolsId": "583ffbdb-1ab6-43df-8029-485535874a3c"
+      "version": "1.11.0",
+      "toolsId": "734362ee-e746-448b-ac3d-643945aa8dd6"
     },
     "dataSources": {
       "mainService": {
@@ -62,7 +62,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "iteractionitems.i18n.i18n"
+          "bundleName": "interactionitems.i18n.i18n"
         }
       },
       "": {

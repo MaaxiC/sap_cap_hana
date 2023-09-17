@@ -1,16 +1,16 @@
 sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
-        'iteractionitems/test/integration/FirstJourney',
-		'iteractionitems/test/integration/pages/Interactions_HeaderList',
-		'iteractionitems/test/integration/pages/Interactions_HeaderObjectPage',
-		'iteractionitems/test/integration/pages/Interactions_ItemsObjectPage'
+        'interactionitems/test/integration/FirstJourney',
+		'interactionitems/test/integration/pages/Interactions_HeaderList',
+		'interactionitems/test/integration/pages/Interactions_HeaderObjectPage',
+		'interactionitems/test/integration/pages/Interactions_ItemsObjectPage'
     ],
     function(JourneyRunner, opaJourney, Interactions_HeaderList, Interactions_HeaderObjectPage, Interactions_ItemsObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
-            launchUrl: sap.ui.require.toUrl('iteractionitems') + '/index.html'
+            launchUrl: sap.ui.require.toUrl('interactionitems') + '/index.html'
         });
 
        

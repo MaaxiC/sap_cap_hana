@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'iteractionitems',
+            appId: 'interactionitems',
             componentId: 'Interactions_HeaderList',
             entitySet: 'Interactions_Header'
         },

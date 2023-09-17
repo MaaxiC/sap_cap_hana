@@ -8,15 +8,18 @@
   "dependencies": {
     "@sap/cds": "^7",
     "@sap/cds-hana": "^2",
-    "express": "^4"
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0"
   },
   "devDependencies": {
     "@sap/cds-dk": "^7",
-    "@sap/ux-specification": "^1.108.13"
+    "@sap/ux-specification": "^1.108.14"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-iteraction_items": "cds watch --open iteraction_items/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-iteraction_items": "cds watch --open iteraction_items/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-interaction_items": "cds watch --open interaction_items/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "build": {
@@ -26,10 +29,13 @@
       "deploy-format": "hdbtable"
     },
     "requires": {
-      "db": "hana"
+      "db": "hana",
+      "uaa": "xsuaa",
+      "auth": "xsuaa"
     }
   },
   "sapux": [
-    "app/iteraction_items"
+    "app/iteraction_items",
+    "app/interaction_items"
   ]
 }
